@@ -32,13 +32,13 @@ export default function FaceTrackingCard() {
           className="text-neutral-500 text-sm mt-2 dark:text-neutral-300"
         >
           <p className="mb-2">
-            My final college project that I built with my roomate. It's a
+            My final college project that I built with my roomate. It{"'"}s a
             generic 3D face tracking control that can be used in Unity3D
             projects.
           </p>
           <p className="mb-2">
-            Super easy to implement and doesn't require any external hardware -
-            relies on devices' front camera for the main input.
+            Super easy to implement and doesn{"'"}t require any external
+            hardware - relies on devices{"'"} front camera for the main input.
           </p>
           <p className="text-neutral-500 text-xs">C# & Unity3D</p>
         </CardItem>

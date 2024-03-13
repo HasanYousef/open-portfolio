@@ -24,11 +24,12 @@ export default function KitabCard() {
             <span className="font-bold">+15K</span> different users.
           </p>
           <p className="mb-2">
-            Kitab's community consists of <span className="font-bold">+5K</span>{" "}
-            active users - high school students and graduates.
+            Kitab{"'"}s community consists of{" "}
+            <span className="font-bold">+5K</span> active users - high school
+            students and graduates.
           </p>
           <p className="mb-2">
-            Kitab's Smart Assistant answered{" "}
+            Kitab{"'"}s Smart Assistant answered{" "}
             <span className="font-bold">+10K</span> questions - a GPT based chat
             bot injected with data about <span className="font-bold">+250</span>{" "}
             college programs.
