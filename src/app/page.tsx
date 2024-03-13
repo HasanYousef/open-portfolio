@@ -16,7 +16,10 @@ export default function Home() {
     <main>
       <Head>
         <link rel="shortcut icon" href="/favicon.ico" />
-        <meta property="og:image" content="/thumbnail.png" />
+        <meta
+          property="og:image"
+          content="https://www.hasan.computer/thumbnail.png"
+        />
         <meta name="twitter:card" content="summary_large_image" />
       </Head>
       <Header />
