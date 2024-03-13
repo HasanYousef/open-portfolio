@@ -1,12 +1,20 @@
 "use client";
 
 import Image from "next/image";
-import React, { useRef, useState } from "react";
+import React, { useRef, useState, useEffect } from "react";
 import { CardBody, CardContainer, CardItem } from "../3d-card";
 
 export default function FaceTrackingCard() {
   const [isPlaying, setIsPlaying] = useState(true);
   const vidRef = useRef<HTMLVideoElement>(null);
+
+  useEffect(() => {
+    if (vidRef !== null && vidRef.current !== null) {
+      setIsPlaying(true);
+      vidRef.current.play();
+    }
+  }, [vidRef]);
+
   const playPause = () => {
     if (vidRef !== null && vidRef.current !== null) {
       if (isPlaying) {
@@ -48,7 +56,6 @@ export default function FaceTrackingCard() {
             muted
             controls={false}
             loop
-            autoPlay
             ref={vidRef}
             className="w-full object-cover rounded-xl group-hover/card:shadow-xl"
           />

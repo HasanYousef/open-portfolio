@@ -16,6 +16,7 @@ export default function Home() {
     <main>
       <Head>
         <link rel="shortcut icon" href="/favicon.ico" />
+        <meta property="image" content="/opengraph-image.png" />
       </Head>
       <Header />
       <div className="flex min-h-screen flex-col items-center dark:bg-dot-white/[0.2] bg-dot-black/[0.2]">
