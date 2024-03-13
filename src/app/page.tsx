@@ -6,6 +6,9 @@ import React from "react";
 import Header from "../components/header";
 import MyTimeline from "../components/my-timeline";
 import KitabCard from "../components/cards/kitab-card";
+import OpenPortfolioCard from "../components/cards/open-portfolio-card";
+import EducationCard from "../components/cards/education-card";
+import ExperienceCard from "../components/cards/Experience-card";
 
 export default function Home() {
   return (
@@ -16,18 +19,19 @@ export default function Home() {
       <Header />
       <div className="flex min-h-screen flex-col items-center dark:bg-dot-white/[0.2] bg-dot-black/[0.2]">
         {/* Radial gradient for the container to give a faded look */}
-        <div className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-black bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"></div>
+        <div className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-black bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_80%,black)]"></div>
         <div className="pt-10"></div>
-        <div className="mt-20 relative flex flex-col place-items-center before:absolute before:h-[300px] before:w-full sm:before:w-[380px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[200px] after:w-full sm:after:w-[200px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px] z-[-1]"></div>
-        <h1 className="text-4xl">Hasan Yousef</h1>
-        <h2 className="text-xl mt-1 text-slate-400">Software Engineer</h2>
-        <p className="max-w-2xl mt-16 text-slate-300 text-center">
-          Passionate software engineer with a love for math and science,
-          dedicated to transforming ideas into user-centric products. Meticulous
-          in design and committed to excellence, I bring a unique blend of
-          technical expertise and creativity to every project. Eager to
-          contribute to dynamic endeavors.
-        </p>
+        <div className="mt-20 flex flex-col place-items-center px-4">
+          <h1 className="text-4xl">Hasan Yousef</h1>
+          <h2 className="text-xl mt-1 text-slate-400">Software Engineer</h2>
+          <span className="text-xs mt-1 text-slate-400">B.Sc CS Graduate</span>
+          <p className="max-w-2xl mt-16 text-slate-300 text-center">
+            Passionate software engineer with a love for math and science,
+            dedicated to transforming ideas into user-centric products.
+            Meticulous in design and committed to excellence. Eager to
+            contribute to dynamic endeavors.
+          </p>
+        </div>
         <div className="flex items-center mt-16">
           <a
             href="https://github.com/HasanYousef"
@@ -35,7 +39,7 @@ export default function Home() {
             className=" mx-4"
           >
             <Image
-              className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert opacity-60"
+              className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert opacity-60 hover:opacity-70"
               src="/GitHub.png"
               alt="GitHub profile link"
               width={19}
@@ -48,7 +52,7 @@ export default function Home() {
             className=" mx-4"
           >
             <Image
-              className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert opacity-60"
+              className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert opacity-60 hover:opacity-70"
               src="/LinkedIn.png"
               alt="LinkedIn profile link"
               width={18}
@@ -61,7 +65,7 @@ export default function Home() {
             className=" mx-4"
           >
             <Image
-              className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert opacity-60"
+              className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert opacity-60 hover:opacity-70"
               src="/GoodReads.png"
               alt="GoodReads profile link"
               width={18}
@@ -69,138 +73,45 @@ export default function Home() {
             />
           </a>
         </div>
-        <div className="w-full px-4">
-          <div className="w-full max-w-5xl flex items-center mt-48">
-            <h2 className="text-slate text-2xl">Side Projects</h2>
-            <hr className="flex-1 ml-3 h-px bg-slate-900 border-0 dark:bg-slate-900" />
+        <div className="w-full max-w-5xl px-4">
+          <div className="w-full flex items-center mt-28 md:mt-48">
+            <hr className="flex-1 h-px bg-slate-800 border-0 dark:bg-slate-800" />
+            <h2 className="text-slate-300 text-2xl mx-4">Life</h2>
+            <hr className="flex-1 h-px bg-slate-800 border-0 dark:bg-slate-800" />
           </div>
-          <div className="w-full max-w-5xl flex justify-between">
-            <KitabCard />
+          <div className="w-full flex items-start flex-col md:flex-row justify-around mt-8">
+            <div className="md:mr-3 flex-1 mb-8 w-full">
+              <ExperienceCard />
+            </div>
+            <div className="md:ml-3 flex-1 w-full">
+              <EducationCard />
+            </div>
           </div>
         </div>
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <div className="pt-40 mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
-          <a
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h2 className={`mb-3 text-2xl font-semibold`}>
-              Docs{" "}
-              <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-                -&gt;
-              </span>
-            </h2>
-            <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-              Find in-depth information about Next.js features and API.
-            </p>
-          </a>
-
-          <a
-            href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h2 className={`mb-3 text-2xl font-semibold`}>
-              Learn{" "}
-              <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-                -&gt;
-              </span>
-            </h2>
-            <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-              Learn about Next.js in an interactive course with&nbsp;quizzes!
-            </p>
-          </a>
-
-          <a
-            href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h2 className={`mb-3 text-2xl font-semibold`}>
-              Templates{" "}
-              <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-                -&gt;
-              </span>
-            </h2>
-            <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-              Explore starter templates for Next.js.
-            </p>
-          </a>
-
-          <a
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h2 className={`mb-3 text-2xl font-semibold`}>
-              Deploy{" "}
-              <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-                -&gt;
-              </span>
-            </h2>
-            <p className={`m-0 max-w-[30ch] text-sm opacity-50 text-balance`}>
-              Instantly deploy your Next.js site to a shareable URL with Vercel.
-            </p>
-          </a>
+        <div className="w-full max-w-5xl px-4">
+          <div className="w-full flex items-center mt-28 md:mt-48">
+            <hr className="flex-1 h-px bg-slate-800 border-0 dark:bg-slate-800" />
+            <h2 className="text-slate-300 text-2xl mx-4">Side Projects</h2>
+            <hr className="flex-1 h-px bg-slate-800 border-0 dark:bg-slate-800" />
+          </div>
+          <div className="w-full flex items-start flex-col md:flex-row justify-around mt-8">
+            <div className="md:mr-3 mb-8">
+              <KitabCard />
+            </div>
+            <div className="md:ml-3">
+              <OpenPortfolioCard />
+            </div>
+          </div>
         </div>
+        <a
+          href="https://github.com/HasanYousef/open-portfolio"
+          className="max-w-5xl px-4 mb-6 mt-28 md:mt-48 text-slate-400 hover:text-slate-300 flex flex-col items-center text-xs"
+        >
+          <span>Designed & built by Hasan</span>
+          <div className="flex">
+            <span>Git fork it now →</span>
+          </div>
+        </a>
       </div>
     </main>
   );
