@@ -6,7 +6,7 @@ import { CardBody, CardContainer, CardItem } from "../3d-card";
 
 export default function KitabCard() {
   return (
-    <CardContainer className="inter-var">
+    <CardContainer className="inter-var mb-8">
       <CardBody className="bg-gray-50 relative group/card dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-auto h-auto rounded-xl p-6 border  ">
         <CardItem
           translateZ="50"
@@ -32,6 +32,10 @@ export default function KitabCard() {
             <span className="font-bold">+10K</span> questions - a GPT based chat
             bot injected with data about <span className="font-bold">+250</span>{" "}
             college programs.
+          </p>
+          <p className="text-neutral-500 text-xs">
+            Node.js, Flutter, Dart, React.js, Next.js, MaterialUI, MongoDB,
+            Vector Databases, AWS S3, Firebase & OpenAI
           </p>
         </CardItem>
         <CardItem translateZ="100" className="w-full mt-4">

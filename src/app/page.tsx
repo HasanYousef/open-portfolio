@@ -4,11 +4,12 @@ import React from "react";
 // import { TracingBeam } from "../components/tracing-beam";
 
 import Header from "../components/header";
-import MyTimeline from "../components/my-timeline";
-import KitabCard from "../components/cards/kitab-card";
-import OpenPortfolioCard from "../components/cards/open-portfolio-card";
 import EducationCard from "../components/cards/education-card";
 import ExperienceCard from "../components/cards/Experience-card";
+import KitabCard from "../components/cards/kitab-card";
+import FaceTrackingCard from "../components/cards/face-tracking-card";
+import OpenPortfolioCard from "../components/cards/open-portfolio-card";
+import MoreProjectsCard from "../components/cards/more-projects-card";
 
 export default function Home() {
   return (
@@ -95,21 +96,29 @@ export default function Home() {
             <hr className="flex-1 h-px bg-slate-800 border-0 dark:bg-slate-800" />
           </div>
           <div className="w-full flex items-start flex-col md:flex-row justify-around mt-8">
-            <div className="md:mr-3 mb-8">
+            <div className="md:mr-3 flex-1">
               <KitabCard />
+              <div className="hidden md:block">
+                <MoreProjectsCard />
+              </div>
             </div>
-            <div className="md:ml-3">
+            <div className="md:ml-3 flex-1">
+              <FaceTrackingCard />
               <OpenPortfolioCard />
+              <div className="md:hidden">
+                <MoreProjectsCard />
+              </div>
             </div>
           </div>
         </div>
         <a
           href="https://github.com/HasanYousef/open-portfolio"
-          className="max-w-5xl px-4 mb-6 mt-28 md:mt-48 text-slate-400 hover:text-slate-300 flex flex-col items-center text-xs"
+          className="group max-w-5xl px-4 mb-6 mt-28 md:mt-48 text-slate-400 hover:text-slate-300 flex flex-col items-center text-xs"
         >
           <span>Designed & built by Hasan</span>
           <div className="flex">
-            <span>Git fork it now →</span>
+            <span>Git fork it now</span>
+            <span className="group-hover:translate-x-1 ml-1">-&gt;</span>
           </div>
         </a>
       </div>
