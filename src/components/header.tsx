@@ -4,7 +4,15 @@ export default function Header() {
   return (
     <nav className="z-40 fixed flex justify-around items-center w-full bg-black/50 backdrop-blur-xl border-b border-slate-900 py-2">
       <div className="flex justify-between items-center w-full max-w-5xl px-4">
-        <span className="text-lg text-slate-400"></span>
+        <span className="text-lg text-slate-400">
+          <Image
+            className="hidden"
+            src="/thumbnail.png"
+            alt="Thumbnail"
+            width={600}
+            height={600}
+          />
+        </span>
         <a
           href="/resume.pdf"
           target="_blank"
