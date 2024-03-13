@@ -16,11 +16,8 @@ export default function Home() {
     <main>
       <Head>
         <link rel="shortcut icon" href="/favicon.ico" />
-        <meta
-          property="og:image"
-          content="https://www.hasan.computer/thumbnail.png"
-        />
-        <meta name="twitter:card" content="summary_large_image" />
+        <link property="og:image" content="/thumbnail.png" />
+        <link property="twitter:card" content="summary_large_image" />
       </Head>
       <Header />
       <div className="flex min-h-screen flex-col items-center dark:bg-dot-white/[0.2] bg-dot-black/[0.2]">
