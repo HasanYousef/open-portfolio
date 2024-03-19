@@ -115,7 +115,7 @@ export default function Home() {
         </div>
         <a
           href="https://github.com/HasanYousef/open-portfolio"
-          className="group max-w-5xl px-4 mb-6 mt-28 md:mt-48 text-slate-400 hover:text-slate-300 flex flex-col items-center text-xs"
+          className="group max-w-5xl px-4 mb-6 mt-28 md:mt-48 text-slate-500 hover:text-slate-400 flex flex-col items-center text-xs"
         >
           <span>Designed & built by Hasan</span>
           <div className="flex">
