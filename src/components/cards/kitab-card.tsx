@@ -21,7 +21,7 @@ export default function KitabCard() {
         >
           <p className="mb-2">
             The app got <span className="font-bold">+100K</span> visits by{" "}
-            <span className="font-bold">+15K</span> different users.
+            <span className="font-bold">+15K</span> authenticated users.
           </p>
           <p className="mb-2">
             Kitab{"'"}s community consists of{" "}
