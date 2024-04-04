@@ -31,8 +31,7 @@ export default function Home() {
           <p className="max-w-2xl mt-16 text-slate-300 text-center">
             Passionate software engineer with a love for math and science,
             dedicated to transforming ideas into user-centric products.
-            Meticulous in design and committed to excellence. Eager to
-            contribute to dynamic endeavors.
+            Meticulous in design and committed to excellence.
           </p>
         </div>
         <div className="flex items-center mt-16">
