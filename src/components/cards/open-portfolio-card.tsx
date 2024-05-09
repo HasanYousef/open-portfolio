@@ -7,17 +7,17 @@ import { CardBody, CardContainer, CardItem } from "../3d-card";
 export default function OpenPortfolioCard() {
   return (
     <CardContainer className="inter-var mb-8">
-      <CardBody className="bg-gray-50 relative group/card dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-auto h-auto rounded-xl p-6 border  ">
+      <CardBody className="bg-gray-50 relative group/card hover:shadow-2xl hover:shadow-emerald-500/[0.1] bg-black border-white/[0.2] w-auto h-auto rounded-xl p-6 border  ">
         <CardItem
           translateZ="50"
           as="h3"
-          className="text-xl font-bold text-neutral-600 dark:text-white"
+          className="text-xl font-bold text-neutral-600 text-white"
         >
           Open Portfolio
         </CardItem>
         <CardItem
           translateZ="60"
-          className="text-neutral-500 text-sm mt-2 dark:text-neutral-300"
+          className="text-neutral-500 text-sm mt-2 text-neutral-300"
         >
           <p className="mb-2">
             An <span className="font-bold">open source</span> and free to use
@@ -41,7 +41,7 @@ export default function OpenPortfolioCard() {
           <a
             href="https://kitab.pro"
             target="_blank"
-            className="py-2 group rounded-xl text-sm font-normal dark:text-white flex items-center mt-4"
+            className="py-2 group rounded-xl text-sm font-normal text-white flex items-center mt-4"
           >
             <Image
               src="/web.png"
@@ -58,7 +58,7 @@ export default function OpenPortfolioCard() {
           <a
             href="https://github.com/HasanYousef/open-portfolio"
             target="_blank"
-            className="py-2 group rounded-xl text-sm font-normal dark:text-white flex items-center mt-2"
+            className="py-2 group rounded-xl text-sm font-normal text-white flex items-center mt-2"
           >
             <Image
               src="/GitHub-white.png"

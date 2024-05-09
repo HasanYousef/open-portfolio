@@ -20,12 +20,12 @@ export default function Home() {
         <link property="twitter:card" content="summary_large_image" />
       </Head>
       <Header />
-      <div className="flex min-h-screen flex-col items-center dark:bg-dot-white/[0.2] bg-dot-black/[0.2]">
+      <div className="flex min-h-screen flex-col items-center bg-black bg-dot-white/[0.2]">
         {/* Radial gradient for the container to give a faded look */}
-        <div className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-black bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_80%,black)]"></div>
+        <div className="absolute pointer-events-none inset-0 flex items-center justify-center bg-black [mask-image:radial-gradient(ellipse_at_center,transparent_80%,black)]"></div>
         <div className="pt-10"></div>
         <div className="mt-20 flex flex-col place-items-center px-4">
-          <h1 className="text-4xl">Hasan Yousef</h1>
+          <h1 className="text-4xl text-slate-100">Hasan Yousef</h1>
           <h2 className="text-xl mt-1 text-slate-400">Software Engineer</h2>
           <span className="text-xs mt-1 text-slate-400">B.Sc CS Graduate</span>
           <p className="max-w-2xl mt-16 text-slate-300 text-center">
@@ -41,7 +41,7 @@ export default function Home() {
             className=" mx-4"
           >
             <Image
-              className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert opacity-60 hover:opacity-70"
+              className="relative drop-shadow-[0_0_0.3rem_#ffffff70] invert opacity-60 hover:opacity-70"
               src="/GitHub.png"
               alt="GitHub profile link"
               width={19}
@@ -54,7 +54,7 @@ export default function Home() {
             className=" mx-4"
           >
             <Image
-              className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert opacity-60 hover:opacity-70"
+              className="relative drop-shadow-[0_0_0.3rem_#ffffff70] invert opacity-60 hover:opacity-70"
               src="/LinkedIn.png"
               alt="LinkedIn profile link"
               width={18}
@@ -67,7 +67,7 @@ export default function Home() {
             className=" mx-4"
           >
             <Image
-              className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert opacity-60 hover:opacity-70"
+              className="relative drop-shadow-[0_0_0.3rem_#ffffff70] invert opacity-60 hover:opacity-70"
               src="/GoodReads.png"
               alt="GoodReads profile link"
               width={18}
@@ -77,9 +77,9 @@ export default function Home() {
         </div>
         <div className="w-full max-w-5xl px-4">
           <div className="w-full flex items-center mt-28 md:mt-48">
-            <hr className="flex-1 h-px bg-slate-800 border-0 dark:bg-slate-800" />
+            <hr className="flex-1 h-px bg-slate-800 border-0 bg-slate-800" />
             <h2 className="text-slate-300 text-2xl mx-4">Life</h2>
-            <hr className="flex-1 h-px bg-slate-800 border-0 dark:bg-slate-800" />
+            <hr className="flex-1 h-px bg-slate-800 border-0 bg-slate-800" />
           </div>
           <div className="w-full flex items-start flex-col md:flex-row justify-around mt-8">
             <div className="md:mr-3 flex-1 mb-8 w-full">
@@ -92,9 +92,9 @@ export default function Home() {
         </div>
         <div className="w-full max-w-5xl px-4">
           <div className="w-full flex items-center mt-28 md:mt-48">
-            <hr className="flex-1 h-px bg-slate-800 border-0 dark:bg-slate-800" />
+            <hr className="flex-1 h-px bg-slate-800 border-0 bg-slate-800" />
             <h2 className="text-slate-300 text-2xl mx-4">Side Projects</h2>
-            <hr className="flex-1 h-px bg-slate-800 border-0 dark:bg-slate-800" />
+            <hr className="flex-1 h-px bg-slate-800 border-0 bg-slate-800" />
           </div>
           <div className="w-full flex items-start flex-col md:flex-row justify-around mt-8">
             <div className="md:mr-3 flex-1">

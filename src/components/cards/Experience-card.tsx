@@ -8,11 +8,11 @@ import { Meteors } from "../meteors";
 export default function ExperienceCard() {
   return (
     <CardContainer className="inter-var w-full overflow-hidden">
-      <CardBody className="bg-gray-50 w-full relative group/card dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] h-auto rounded-xl p-6 border">
+      <CardBody className="bg-gray-50 w-full relative group/card hover:shadow-2xl hover:shadow-emerald-500/[0.1] bg-black border-white/[0.2] h-auto rounded-xl p-6 border">
         <CardItem
           translateZ="20"
           as="h3"
-          className="text-xl w-full font-bold text-neutral-600 dark:text-white flex items-center mb-6"
+          className="text-xl w-full font-bold text-neutral-600 text-white flex items-center mb-6"
         >
           <Image
             src="/job.png"
@@ -25,7 +25,7 @@ export default function ExperienceCard() {
         </CardItem>
         <CardItem
           translateZ="50"
-          className="text-neutral-500 text-sm mt-2 dark:text-neutral-300"
+          className="text-neutral-500 text-sm mt-2 text-neutral-300"
         >
           <p className="mb-1 font-bold">Software Engineer • 2yrs</p>
           <p className="mb-1 text-xs">
@@ -34,9 +34,9 @@ export default function ExperienceCard() {
         </CardItem>
         <CardItem
           translateZ="40"
-          className="text-neutral-500 text-sm mt-2 dark:text-neutral-300"
+          className="text-neutral-500 text-sm mt-2 text-neutral-300"
         >
-          <ul className="mt-3 mb-2 list-disc text-xs dark:text-neutral-400">
+          <ul className="mt-3 mb-2 list-disc text-xs text-neutral-400">
             <li className="mb-1">
               Develop in-app-purchases and subscriptions (buy in-game goods and
               currencies with real money)
@@ -56,7 +56,7 @@ export default function ExperienceCard() {
         </CardItem>
         <CardItem
           translateZ="50"
-          className="text-neutral-500 text-sm mt-6 dark:text-neutral-300"
+          className="text-neutral-500 text-sm mt-6 text-neutral-300"
         >
           <p className="mb-1 font-bold">Student Position • 6mos</p>
           <p className="mb-1 text-xs">
@@ -65,9 +65,9 @@ export default function ExperienceCard() {
         </CardItem>
         <CardItem
           translateZ="40"
-          className="text-neutral-500 text-sm dark:text-neutral-300"
+          className="text-neutral-500 text-sm text-neutral-300"
         >
-          <ul className="mt-3 mb-2 list-disc text-xs dark:text-neutral-400">
+          <ul className="mt-3 mb-2 list-disc text-xs text-neutral-400">
             <li className="mb-1">
               Cooperate with the artists to build and develop the UI
             </li>
